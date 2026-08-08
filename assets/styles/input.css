@@ -2,8 +2,6 @@
 
   @theme {
   --color-bleu-des-profondeurs: #021823;
-  --color-cyan-mer: #4edef1;
-  --color-cyan-mer-sombre: #0197af;
 }
 
 @layer utilities {
@@ -89,4 +87,17 @@ p, body {
 /* L'indicateur : le background + bordure */
 .nav-link.active .active-indicator {
   display: block;
+}
+
+.photo-agrandie {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -100%) scale(2) !important;
+  width: 150px !important;
+  height: 150px !important;
+  border: 1px solid #021823;
+  border-radius: 50% !important;
+  z-index: 100;
+  box-shadow: 0 30px 60px rgba(0, 240, 255, 0.5);
 }

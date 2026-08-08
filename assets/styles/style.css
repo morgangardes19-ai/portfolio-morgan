@@ -14,7 +14,6 @@
     --color-cyan-400: oklch(78.9% 0.154 211.53);
     --color-cyan-500: oklch(71.5% 0.143 215.221);
     --color-slate-300: oklch(86.9% 0.022 252.894);
-    --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -43,7 +42,6 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-bleu-des-profondeurs: #021823;
-    --color-cyan-mer-sombre: #0197af;
   }
 }
 @layer base {
@@ -285,9 +283,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -438,6 +433,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .border-cyan-400\/20 {
     border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -461,9 +460,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-cyan-400) 50%, transparent);
     }
-  }
-  .border-cyan-mer-sombre {
-    border-color: var(--color-cyan-mer-sombre);
   }
   .border-white\/25 {
     border-color: color-mix(in srgb, #fff 25%, transparent);
@@ -651,9 +647,6 @@
   .text-slate-300 {
     color: var(--color-slate-300);
   }
-  .text-slate-500 {
-    color: var(--color-slate-500);
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -711,11 +704,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .transition-shadow {
-    transition-property: box-shadow;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -738,18 +726,6 @@
     transition-timing-function: var(--ease-out);
   }
   @media (hover: hover) {
-    .group-hover\:shadow-\[0_0_20px_rgba\(0\,240\,255\,0\.5\)\]:is(:where(.group):hover *) {
-      --tw-shadow: 0 0 20px var(--tw-shadow-color, rgba(0,240,255,0.5));
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    }
-    .group-hover\:ring-cyan-400\/70:is(:where(.group):hover *) {
-      --tw-ring-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 70%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .group-hover\:ring-cyan-400\/70:is(:where(.group):hover *) {
-        --tw-ring-color: color-mix(in oklab, var(--color-cyan-400) 70%, transparent);
-      }
-    }
     .hover\:scale-110:hover {
       --tw-scale-x: 110%;
       --tw-scale-y: 110%;
@@ -918,6 +894,18 @@ p, body {
 }
 .nav-link.active .active-indicator {
   display: block;
+}
+.photo-agrandie {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -100%) scale(2) !important;
+  width: 150px !important;
+  height: 150px !important;
+  border: 1px solid #021823;
+  border-radius: 50% !important;
+  z-index: 100;
+  box-shadow: 0 30px 60px rgba(0, 240, 255, 0.5);
 }
 @property --tw-translate-x {
   syntax: "*";

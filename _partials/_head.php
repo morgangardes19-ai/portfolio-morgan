@@ -13,6 +13,7 @@
     <script src="../assets/scripts/overlay-menu-burger.js" defer></script>
     <script src="../assets/scripts/skills-bubbles.js" defer></script>
     <script src="../assets/scripts/scroll-animations.js" defer></script>
+    <script src="../assets/scripts/photo-expand.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" href="../assets/images/favicon-bulles-origine-32px.png">
@@ -41,8 +42,8 @@
         <span id="depth-value" class="font-mono text-xs text-cyan-300/80 tabular-nums">0m</span>
     </div>
 
-<!-- Header -->
-    <header id="header" class="fixed top-4 left-4 right-4 z-40 py-2 md:py-3 border border-cyan-mer-sombre rounded-[50px] backdrop-blur-xl">
+    <!-- Header -->
+    <header id="header" class="fixed top-4 left-4 right-4 z-40 py-2 md:py-3 border-2 border-cyan-400/20 rounded-[50px] backdrop-blur-xl">
         <div class="mx-auto max-w-7xl px-4 md:px-8">
             <div class="flex items-center justify-between rounded-full px-3 md:px-5 py-2.5 bg-transparent">
 
@@ -53,8 +54,8 @@
                         <span class="absolute inset-0 rounded-full border border-cyan-400/40 animate-ping" style="animation-duration: 3s;"></span>
                         <span class="absolute -inset-1 rounded-full border border-cyan-400/20"></span>
                         <!-- Photo -->
-                        <div class="relative w-full h-full rounded-full overflow-hidden ring-2 ring-cyan-400/40 group-hover:ring-cyan-400/70 transition-shadow group-hover:shadow-[0_0_20px_rgba(0,240,255,0.5)]">
-                            <img src="../assets/documents/portfolio-morgan.png" alt="Photo de profil" id="decalement-photo" class="w-full h-full object-cover">
+                        <div class="relative w-full h-full rounded-full overflow-hidden ring-2 ring-cyan-400/40 transition-all duration-300">
+                            <img src="../assets/documents/portfolio-morgan.png" alt="Photo de profil" id="photo-profil" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <span class="font-mono text-sm text-cyan-100 hidden sm:block">Morgan Gardès</span>
@@ -68,7 +69,7 @@
                     <!-- Overlay burger -->
                     <div id="overlay-burger" class="fixed transition-all duration-300 translate-x-full top-30 -right-4 left-0 flex flex-col items-center gap-6 px-16 py-14 bg-black/95 rounded-2xl border border-cyan-400/20 text-center z-50">
                         <button id="croix-menu-burger" class="absolute top-6 right-6 text-cyan-300 cursor-pointer">
-                         <img class="w-6 h-auto" src="../assets/images/logo-croix-32px.png" alt="Fermer le menu">
+                            <img class="w-6 h-auto" src="../assets/images/logo-croix-32px.png" alt="Fermer le menu">
                         </button>
                         <button data-section="profil" class="nav-link text-slate-300 hover:text-cyan-200 font-mono text-sm">Profil</button>
                         <button data-section="competences" class="nav-link text-slate-300 hover:text-cyan-200 font-mono text-sm">Compétences</button>
@@ -79,19 +80,19 @@
 
                 <!-- Navigation Desktop -->
                 <nav class="hidden lg:flex items-center gap-1 md:gap-1.5">
-                    <button data-section="profil" class="nav-link relative px-2.5 md:px-4 py-2 rounded-full font-mono text-[11px] md:text-sm transition-colors text-slate-300 hover:text-cyan-200">
+                    <button data-section="profil" class="nav-link relative px-2.5 md:px-4 py-2 rounded-full font-mono text-[11px] md:text-sm transition-colors text-slate-300 hover:text-cyan-200 cursor-pointer">
                         Profil
                         <span class="active-indicator absolute inset-0 rounded-full border border-cyan-400/40 bg-cyan-400/10 hidden"></span>
                     </button>
-                    <button data-section="competences" class="nav-link relative px-2.5 md:px-4 py-2 rounded-full font-mono text-[11px] md:text-sm transition-colors text-slate-300 hover:text-cyan-200">
+                    <button data-section="competences" class="nav-link relative px-2.5 md:px-4 py-2 rounded-full font-mono text-[11px] md:text-sm transition-colors text-slate-300 hover:text-cyan-200 cursor-pointer">
                         Compétences
                         <span class="active-indicator absolute inset-0 rounded-full border border-cyan-400/40 bg-cyan-400/10 hidden"></span>
                     </button>
-                    <button data-section="projets" class="nav-link relative px-2.5 md:px-4 py-2 rounded-full font-mono text-[11px] md:text-sm transition-colors text-slate-300 hover:text-cyan-200">
+                    <button data-section="projets" class="nav-link relative px-2.5 md:px-4 py-2 rounded-full font-mono text-[11px] md:text-sm transition-colors text-slate-300 hover:text-cyan-200 cursor-pointer">
                         Projets
                         <span class="active-indicator absolute inset-0 rounded-full border border-cyan-400/40 bg-cyan-400/10 hidden"></span>
                     </button>
-                    <button data-section="contact" class="nav-link relative px-2.5 md:px-4 py-2 rounded-full font-mono text-[11px] md:text-sm transition-colors text-slate-300 hover:text-cyan-200">
+                    <button data-section="contact" class="nav-link relative px-2.5 md:px-4 py-2 rounded-full font-mono text-[11px] md:text-sm transition-colors text-slate-300 hover:text-cyan-200 cursor-pointer">
                         Contact
                         <span class="active-indicator absolute inset-0 rounded-full border border-cyan-400/40 bg-cyan-400/10 hidden"></span>
                     </button>
