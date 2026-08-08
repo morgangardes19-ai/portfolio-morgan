@@ -22,3 +22,12 @@ document.addEventListener("click", function(event) {
         overlayBurger.classList.remove("right-0");
     }
 });
+
+document.querySelectorAll("#overlay-burger [data-section]").forEach((dataSection) => {
+dataSection.addEventListener("click", closeBurgerMenu);
+function closeBurgerMenu () {
+overlayBurger.classList.add("translate-x-full", "-right-4");
+overlayBurger.classList.remove("right-0");
+}
+});
+
