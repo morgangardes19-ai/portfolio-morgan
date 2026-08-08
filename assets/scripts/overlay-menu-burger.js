@@ -3,31 +3,42 @@ let overlayLogoBurger = document.querySelector("#logo-burger");
 let overlayLogoCroixMenuMobile = document.querySelector("#croix-menu-burger");
 
 overlayLogoBurger.addEventListener("click", handleClickOnLogoBurger);
-overlayLogoCroixMenuMobile.addEventListener("click", handeClickOnLogoCroixMobile);
+overlayLogoCroixMenuMobile.addEventListener(
+  "click",
+  handeClickOnLogoCroixMobile,
+);
 
-function handleClickOnLogoBurger (e) {
-    e.stopPropagation();
-    overlayBurger.classList.remove("translate-x-full", "-right-4");
-    overlayBurger.classList.add("right-0");
+function handleClickOnLogoBurger(e) {
+  if (photo.classList.contains("photo-agrandie")) {
+    photo.classList.remove("photo-agrandie");
+    emplacementDOrigine.appendChild(photo);
+  }
+  e.stopPropagation();
+  overlayBurger.classList.remove("translate-x-full", "-right-4");
+  overlayBurger.classList.add("right-0");
 }
 
-function handeClickOnLogoCroixMobile () {
+function handeClickOnLogoCroixMobile() {
+  overlayBurger.classList.add("translate-x-full", "-right-4");
+  overlayBurger.classList.remove("right-0");
+}
+
+document.addEventListener("click", function (event) {
+  if (
+    !overlayBurger.classList.contains("translate-x-full") &&
+    !overlayBurger.contains(event.target)
+  ) {
     overlayBurger.classList.add("translate-x-full", "-right-4");
     overlayBurger.classList.remove("right-0");
-}
+  }
+});
 
-document.addEventListener("click", function(event) {
-    if (!overlayBurger.classList.contains("translate-x-full") && !overlayBurger.contains(event.target)) {
-        overlayBurger.classList.add("translate-x-full", "-right-4");
-        overlayBurger.classList.remove("right-0");
+document
+  .querySelectorAll("#overlay-burger [data-section]")
+  .forEach((dataSection) => {
+    dataSection.addEventListener("click", closeBurgerMenu);
+    function closeBurgerMenu() {
+      overlayBurger.classList.add("translate-x-full", "-right-4");
+      overlayBurger.classList.remove("right-0");
     }
-});
-
-document.querySelectorAll("#overlay-burger [data-section]").forEach((dataSection) => {
-dataSection.addEventListener("click", closeBurgerMenu);
-function closeBurgerMenu () {
-overlayBurger.classList.add("translate-x-full", "-right-4");
-overlayBurger.classList.remove("right-0");
-}
-});
-
+  });
