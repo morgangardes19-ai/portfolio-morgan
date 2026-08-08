@@ -55,7 +55,7 @@
                         <span class="absolute -inset-1 rounded-full border border-cyan-400/20"></span>
                         <!-- Photo -->
                         <div class="relative w-full h-full rounded-full overflow-hidden ring-2 ring-cyan-400/40 transition-all duration-300">
-                            <img src="../assets/documents/portfolio-morgan.png" alt="Photo de profil" id="photo-profil" class="w-full h-full object-cover">
+                            <img src="../assets/documents/portfolio-morgan.png" alt="Photo de profil" id="photo-profil" class="w-full h-full object-cover" draggable="false">
                         </div>
                     </div>
                     <span class="font-mono text-sm text-cyan-100 hidden sm:block">Morgan Gardès</span>
