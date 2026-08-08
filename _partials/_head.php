@@ -54,7 +54,7 @@
                         <span class="absolute inset-0 rounded-full border border-cyan-400/40 animate-ping" style="animation-duration: 3s;"></span>
                         <span class="absolute -inset-1 rounded-full border border-cyan-400/20"></span>
                         <!-- Photo -->
-                        <div class="relative w-full h-full rounded-full overflow-hidden ring-2 ring-cyan-400/40 transition-all duration-300">
+                        <div class="relative w-full h-full rounded-full overflow-hidden ring-2 ring-cyan-400/40 group-hover:ring-cyan-400/70 transition-all group-hover:shadow-[0_0_20px_rgba(0,240,255,0.5)] duration-300">
                             <img src="../assets/documents/portfolio-morgan.png" alt="Photo de profil" id="photo-profil" class="w-full h-full object-cover" draggable="false">
                         </div>
                     </div>
@@ -71,10 +71,10 @@
                         <button id="croix-menu-burger" class="absolute top-6 right-6 text-cyan-300 cursor-pointer">
                             <img class="w-6 h-auto" src="../assets/images/logo-croix-32px.png" alt="Fermer le menu">
                         </button>
-                        <button data-section="profil" class="nav-link text-slate-300 hover:text-cyan-200 font-mono text-sm">Profil</button>
-                        <button data-section="competences" class="nav-link text-slate-300 hover:text-cyan-200 font-mono text-sm">Compétences</button>
-                        <button data-section="projets" class="nav-link  text-slate-300 hover:text-cyan-200 font-mono text-sm">Projets</button>
-                        <button data-section="contact" class="nav-link  text-slate-300 hover:text-cyan-200 font-mono text-sm">Contact</button>
+                        <button data-section="profil" class="nav-link relative px-4 py-2 text-slate-300 hover:text-cyan-200 font-mono text-sm">Profil<span class="active-indicator absolute inset-0 rounded-full border border-cyan-400/40 bg-cyan-400/10 hidden"></span></button>
+                        <button data-section="competences" class="nav-link relative px-4 py-2 text-slate-300 hover:text-cyan-200 font-mono text-sm">Compétences<span class="active-indicator absolute inset-0 rounded-full border border-cyan-400/40 bg-cyan-400/10 hidden"></span></button>
+                        <button data-section="projets" class="nav-link relative px-4 py-2 text-slate-300 hover:text-cyan-200 font-mono text-sm">Projets<span class="active-indicator absolute inset-0 rounded-full border border-cyan-400/40 bg-cyan-400/10 hidden"></span></button>
+                        <button data-section="contact" class="nav-link relative px-4 py-2 text-slate-300 hover:text-cyan-200 font-mono text-sm">Contact<span class="active-indicator absolute inset-0 rounded-full border border-cyan-400/40 bg-cyan-400/10 hidden"></span></button>
                     </div>
                 </nav>
 
