@@ -1,25 +1,25 @@
 <?php require_once "../_partials/_head.php" ?>
 
 <!-- SECTION 1 : PROFIL -->
-<section id="profil" class="relative min-h-screen flex items-center justify-end px-6 md:px-20 py-32">
+<section id="profil" class="relative min-h-screen flex items-center justify-end px-6 md:px-32">
     <div class="max-w-2xl w-full">
 
-        <p data-animate data-delay="0" class="font-mono text-sm text-cyan-400/70 mb-4 translate-x-8 opacity-0 transition-all duration-500 is-visible">
+        <p data-animate data-delay="0" class="font-mono text-sm text-cyan-400/70 mb-4 translate-x-8  transition-all duration-500 is-visible">
             <span class="text-cyan-300">$</span> Qui suis-je ?
         </p>
 
         <h1 data-animate data-delay="0.1"
-            class="font-mono text-4xl md:text-6xl font-bold text-white mb-3 uppercase tracking-wider text-glow-cyan translate-x-8 opacity-0 transition-all duration-500">
+            class="font-mono text-4xl md:text-6xl font-bold text-white mb-3 uppercase tracking-wider text-glow-cyan translate-x-8  transition-all duration-500">
             Morgan Gardès
         </h1>
 
         <p data-animate data-delay="0.2"
-            class="font-mono text-cyan-300 text-lg mb-8 tracking-wide translate-x-8 opacity-0 transition-all duration-500">
+            class="font-mono text-cyan-300 text-lg mb-8 tracking-wide translate-x-8  transition-all duration-500">
             &gt; Développeur web et web mobile
         </p>
 
         <div data-animate data-delay="0.3"
-            class="flex flex-col gap-5 border-l-2 border-r-2 border-cyan-400/30 pl-6 translate-x-8 opacity-0 transition-all duration-500">
+            class="flex flex-col gap-5 border-l-2 border-cyan-400/30 pl-6 translate-x-8  transition-all duration-500">
             <p class="text-lg leading-relaxed text-slate-300">
                 Passionné par le développement web, je transforme des idées en
                 expériences numériques fluides.
