@@ -45,14 +45,12 @@
 <!-- SECTION 2 : COMPÉTENCES -->
 <section id="competences" class="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-20">
     <div class="text-center mb-16">
-        <!-- <p class="font-mono text-sm text-cyan-400/70 mb-2">// 02</p> -->
         <h2 class="font-mono text-3xl md:text-5xl font-bold text-white uppercase tracking-wider text-glow-cyan">
             Compétences
         </h2>
     </div>
 
     <!-- Bouton CV -->
-
     <div class="flex justify-center mb-20">
         <a href="../assets/documents/cv-morgan-gardes-stage-dwwm.pdf" target="_blank" rel="noopener noreferrer"
             class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full border border-cyan-400/50 bg-cyan-400/5 hover:bg-cyan-400/15 transition-colors">

@@ -20,7 +20,6 @@
   }
 }
 
-/* Polices */
 h1, h2, h3, .font-mono {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
@@ -31,7 +30,6 @@ p, body {
   font-family: "Inter", sans-serif;
 }
 
-/* ------ BULLES SKILLS ------ */
 .skill-bubble.popped .bubble-face {
   opacity: 0;
   pointer-events: none;
@@ -72,19 +70,17 @@ p, body {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
-/* Scrollbar */
+/* --- Scrollbar --- */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #021823; }
 ::-webkit-scrollbar-thumb { background: #0f6274; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #5fe6f8; }
 
-/* Scroll animations - Modification du bouton au click */
-/* Le bouton actif : texte cyan */
+/* --- Modification du bouton au click --- */
 .nav-link.active {
   color: #5fe6f8;
 }
 
-/* L'indicateur : le background + bordure */
 .nav-link.active .active-indicator {
   display: block;
 }
@@ -103,6 +99,7 @@ p, body {
 }
 
 .is-visible {
-opacity : 1;
-translate : 0 0
+  opacity: 1;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
 }

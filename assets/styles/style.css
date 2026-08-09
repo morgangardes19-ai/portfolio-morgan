@@ -315,9 +315,6 @@
   .mb-1 {
     margin-bottom: var(--spacing);
   }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
@@ -927,9 +924,6 @@
       --tw-scale-z: 110%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
-    .hover\:overflow-hidden:hover {
-      overflow: hidden;
-    }
     .hover\:border-cyan-400\/40:hover {
       border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 40%, transparent);
     }
@@ -1125,7 +1119,8 @@ p, body {
 }
 .is-visible {
   opacity: 1;
-  translate: 0 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
 }
 @property --tw-translate-x {
   syntax: "*";
