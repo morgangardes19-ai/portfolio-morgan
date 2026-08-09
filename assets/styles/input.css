@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-  @theme {
+@theme {
   --color-abysse: #021823;
 }
 
@@ -15,18 +15,35 @@
   }
   .caustic-overlay {
     background-image:
-      radial-gradient(ellipse at 20% 0%, rgba(0, 240, 255, 0.08), transparent 50%),
-      radial-gradient(ellipse at 80% 100%, rgba(0, 120, 200, 0.06), transparent 50%);
+      radial-gradient(
+        ellipse at 20% 0%,
+        rgba(0, 240, 255, 0.08),
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse at 80% 100%,
+        rgba(0, 120, 200, 0.06),
+        transparent 50%
+      );
+  }
+  .is-visible {
+    opacity: 1;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
   }
 }
 
-h1, h2, h3, .font-mono {
+h1,
+h2,
+h3,
+.font-mono {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-p, body {
+p,
+body {
   font-family: "Inter", sans-serif;
 }
 
@@ -36,12 +53,28 @@ p, body {
 }
 
 @keyframes particle-fly {
-  0%   { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-  100% { transform: translate(calc(-50% + cos(var(--angle)) * var(--dist)), calc(-50% + sin(var(--angle)) * var(--dist))) scale(0.5); opacity: 0; }
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+        calc(-50% + cos(var(--angle)) * var(--dist)),
+        calc(-50% + sin(var(--angle)) * var(--dist))
+      )
+      scale(0.5);
+    opacity: 0;
+  }
 }
 @keyframes ring-expand {
-  0%   { transform: translate(-50%, -50%) scale(0); opacity: 1; }
-  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
 }
 .particle {
   position: absolute;
@@ -64,17 +97,30 @@ p, body {
 }
 
 @keyframes ping {
-  75%, 100% { transform: scale(2); opacity: 0; }
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 .animate-ping {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 /* --- Scrollbar --- */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #021823; }
-::-webkit-scrollbar-thumb { background: #0f6274; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #5fe6f8; }
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #021823;
+}
+::-webkit-scrollbar-thumb {
+  background: #0f6274;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5fe6f8;
+}
 
 /* --- Modification du bouton au click --- */
 .nav-link.active {
@@ -96,10 +142,4 @@ p, body {
   border-radius: 50%;
   z-index: 100;
   box-shadow: 0 30px 60px rgba(0, 240, 255, 0.5);
-}
-
-.is-visible {
-  opacity: 1;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
 }
