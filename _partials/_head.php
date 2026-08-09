@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-bleu-des-profondeurs caustic-overlay">
+<body class="bg-abysse caustic-overlay">
 
     <!-- Canvas Bulles de fond -->
     <canvas id="bubble-canvas" class="fixed inset-0 pointer-events-none" style="z-index: 0;" aria-hidden="true"></canvas>

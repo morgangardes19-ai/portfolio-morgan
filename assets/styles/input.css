@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
   @theme {
-  --color-bleu-des-profondeurs: #021823;
+  --color-abysse: #021823;
 }
 
 @layer utilities {
@@ -31,7 +31,7 @@ p, body {
   font-family: "Inter", sans-serif;
 }
 
-/* ──── BULLES SKILLS ──── */
+/* ------ BULLES SKILLS ------ */
 .skill-bubble.popped .bubble-face {
   opacity: 0;
   pointer-events: none;
@@ -100,4 +100,9 @@ p, body {
   border-radius: 50%;
   z-index: 100;
   box-shadow: 0 30px 60px rgba(0, 240, 255, 0.5);
+}
+
+.is-visible {
+opacity : 1;
+translate : 0 0
 }

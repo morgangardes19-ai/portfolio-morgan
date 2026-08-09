@@ -4,7 +4,7 @@
 <section id="profil" class="relative min-h-screen flex items-center justify-end px-6 md:px-20">
     <div class="max-w-2xl w-full mr-8">
 
-        <p data-animate data-delay="0" class="font-mono text-sm text-cyan-400/70 mb-4 translate-x-8  transition-all duration-500 is-visible">
+        <p data-animate data-delay="0" class="font-mono text-sm text-cyan-400/70 mb-4 translate-x-8 transition-all duration-500 is-visible">
             <span class="text-cyan-300">$</span> Qui suis-je ?
         </p>
 
