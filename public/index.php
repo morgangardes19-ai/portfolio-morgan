@@ -54,7 +54,7 @@
     <!-- Bouton CV -->
 
     <div class="flex justify-center mb-20">
-        <a href="../assets/documents/cv-morgan-gardes-stage-dwwm.pdf" target="blank"
+        <a href="../assets/documents/cv-morgan-gardes-stage-dwwm.pdf" target="_blank" rel="noopener noreferrer"
             class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full border border-cyan-400/50 bg-cyan-400/5 hover:bg-cyan-400/15 transition-colors">
             <!-- Icône ouvrir -->
             <span class="font-mono text-sm text-cyan-100 tracking-wide">Ouvrir mon CV</span>
@@ -88,24 +88,28 @@
                 'desc' => 'Mini canal de discussion qui requiert une inscription, sur le thème "détective".',
                 'tags' => ['HTML', 'Tailwind', 'PHP', 'JavaScript', 'SQL'],
                 'img' => '../assets/gifs/gif-projet-minichat.gif',
+                'link' => 'https://morgan-minichat.projets-dev.garage404.com/public/index.php',
             ],
             [
                 'title' => 'In the hall of the Mountain King',
                 'desc' => 'Site en responsive.',
                 'tags' => ['HTML', 'Tailwind'],
                 'img' => '../assets/gifs/gif-the-mountain.gif',
+                'link' => '',
             ],
             [
                 'title' => 'Drumpad',
                 'desc' => 'Outil permettant d\'enregistrer et de rejouer des notes.',
                 'tags' => ['HTML', 'CSS', 'JavaScript'],
                 'img' => '../assets/gifs/gif-drumpad.gif',
+                'link' => '',
             ],
             [
                 'title' => 'W.',
                 'desc' => 'Site en responsive.',
                 'tags' => ['HTML', 'Tailwind'],
                 'img' => '../assets/gifs/gif-w-avec-tailwind.gif',
+                'link' => '',
             ],
         ];
         foreach ($projects as $index => $project):
@@ -118,13 +122,13 @@
                     </div>
                     <div class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-[#020812] pointer-events-none"></div>
                     <div class="absolute inset-2 rounded-xl border-2 border-cyan-400/0 group-hover:border-cyan-400/30 transition-colors pointer-events-none"></div>
-                    <div class="absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center bg-[#020812]/70 border border-cyan-400/30 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="<?= $project['link'] ?>" target="_blank" rel="noopener noreferrer" class="absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center bg-[#020812]/70 border border-cyan-400/30 opacity-0 group-hover:opacity-100 transition-opacity">
                         <svg class="w-4 h-4 text-cyan-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                             <polyline points="15 3 21 3 21 9" />
                             <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
-                    </div>
+                    </a>
                 </div>
                 <div class="p-5">
                     <h3 class="font-mono text-lg text-white mb-1"><?= $project['title'] ?></h3>
