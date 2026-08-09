@@ -21,24 +21,27 @@ function handleClickOnButton() {
 // ---- Scroll spy : active le bon bouton selon la section visible ----
 const sections = document.querySelectorAll("section");
 
-const sectionObserver = new IntersectionObserver(function (entries) {
-  entries.forEach(function (entry) {
-    if (entry.isIntersecting) {
-      const section = entry.target;
-      const boutons = document.querySelectorAll(
-        `.nav-link[data-section="${section.id}"]`,
-      );
+const sectionObserver = new IntersectionObserver(
+  function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        const section = entry.target;
+        const boutons = document.querySelectorAll(
+          `.nav-link[data-section="${section.id}"]`,
+        );
 
-      navLinks.forEach((navLink) => {
-        navLink.classList.remove("active");
-      });
+        navLinks.forEach((navLink) => {
+          navLink.classList.remove("active");
+        });
 
-      boutons.forEach((bouton) => {
-        bouton.classList.add("active");
-      });
-    }
-  });
-});
+        boutons.forEach((bouton) => {
+          bouton.classList.add("active");
+        });
+      }
+    });
+  },
+  { rootMargin: "-50% 0px -50% 0px" },
+);
 
 sections.forEach(function (section) {
   sectionObserver.observe(section);
