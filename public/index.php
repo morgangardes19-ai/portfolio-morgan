@@ -1,15 +1,45 @@
 <?php require_once "../_partials/_head.php" ?>
 
 <!-- SECTION 1 : PROFIL -->
-<section id="profil">
-    <p>Qui suis-je ?</p>
-    <h1>Morgan Gardès</h1>
-    <p>&gt; Développeur web et web mobile</p>
-    <p>Passionné par le développement web, je transforme des idées en
-        expériences numériques fluides.</p>
-    <p>Curieux de nature, je plonge constamment dans de nouvelles
-        technologies pour repousser mes limites.
-        Chaque projet est une exploration vers plus de profondeur.</p>
+<section id="profil" class="relative min-h-screen flex items-center justify-end px-6 md:px-20 py-32">
+    <div class="max-w-2xl w-full">
+
+        <p data-animate data-delay="0" class="font-mono text-sm text-cyan-400/70 mb-4 translate-x-8 opacity-0 transition-all duration-500 is-visible">
+            <span class="text-cyan-300">$</span> Qui suis-je ?
+        </p>
+
+        <h1 data-animate data-delay="0.1"
+            class="font-mono text-4xl md:text-6xl font-bold text-white mb-3 uppercase tracking-wider text-glow-cyan translate-x-8 opacity-0 transition-all duration-500">
+            Morgan Gardès
+        </h1>
+
+        <p data-animate data-delay="0.2"
+            class="font-mono text-cyan-300 text-lg mb-8 tracking-wide translate-x-8 opacity-0 transition-all duration-500">
+            &gt; Développeur web et web mobile
+        </p>
+
+        <div data-animate data-delay="0.3"
+            class="flex flex-col gap-5 border-l-2 border-r-2 border-cyan-400/30 pl-6 translate-x-8 opacity-0 transition-all duration-500">
+            <p class="text-lg leading-relaxed text-slate-300">
+                Passionné par le développement web, je transforme des idées en
+                expériences numériques fluides.
+            </p>
+            <p class="text-lg leading-relaxed text-slate-400">
+                Curieux de nature, je plonge constamment dans de nouvelles
+                technologies pour repousser mes limites.
+                Chaque projet est une exploration vers plus de profondeur.
+            </p>
+        </div>
+
+        <div data-animate data-delay="0.5"
+            class="mt-8 flex flex-wrap gap-3 translate-x-8 opacity-0 transition-all duration-500">
+            <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">Frontend</span>
+            <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">Backend</span>
+            <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">UI/UX</span>
+            <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">Performance</span>
+            <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">Responsive</span>
+        </div>
+    </div>
 </section>
 
 <!-- SECTION 2 : COMPÉTENCES -->
@@ -28,7 +58,7 @@
             class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full border border-cyan-400/50 bg-cyan-400/5 hover:bg-cyan-400/15 transition-colors">
             <!-- Icône ouvrir -->
             <span class="font-mono text-sm text-cyan-100 tracking-wide">Ouvrir mon CV</span>
-             <svg class="w-4 h-4 text-cyan-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="w-4 h-4 text-cyan-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                 <polyline points="15 3 21 3 21 9" />
                 <line x1="10" y1="14" x2="21" y2="3" />
