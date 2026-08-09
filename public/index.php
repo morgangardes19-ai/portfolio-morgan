@@ -116,12 +116,13 @@
         ?>
             <div data-animate data-delay="<?= $index * 0.1 ?>"
                 class="group relative rounded-2xl overflow-hidden border border-cyan-400/15 glass hover:border-cyan-400/40 translate-y-8 opacity-0 transition-all duration-700 hover:-translate-y-2">
-                <div class="relative aspect-3/4 overflow-hidden">
-                    <div class="w-full h-full transition-transform duration-1500 ease-out group-hover:scale-150">
-                        <img src="<?= $project['img'] ?>" alt="Screenshot du projet <?= $project['title'] ?>" class="w-full h-full object-cover">
+                <div class="relative aspect-3/4">
+                    <div class="absolute inset-2 rounded-xl border-2 border-cyan-400/0 group-hover:border-cyan-400/30 transition-colors pointer-events-none overflow-hidden">
+                        <div class="w-full h-full transition-transform duration-1500 ease-out group-hover:scale-150">
+                            <img src="<?= $project['img'] ?>" alt="Screenshot du projet <?= $project['title'] ?>" class="w-full h-full object-cover">
+                        </div>
                     </div>
                     <div class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-[#020812] pointer-events-none"></div>
-                    <div class="absolute inset-2 rounded-xl border-2 border-cyan-400/0 group-hover:border-cyan-400/30 transition-colors pointer-events-none"></div>
                     <a href="<?= $project['link'] ?>" target="_blank" rel="noopener noreferrer" class="absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center bg-[#020812]/70 border border-cyan-400/30 opacity-0 group-hover:opacity-100 transition-opacity">
                         <svg class="w-4 h-4 text-cyan-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />

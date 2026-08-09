@@ -927,6 +927,9 @@
       --tw-scale-z: 110%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
+    .hover\:overflow-hidden:hover {
+      overflow: hidden;
+    }
     .hover\:border-cyan-400\/40:hover {
       border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 40%, transparent);
     }
