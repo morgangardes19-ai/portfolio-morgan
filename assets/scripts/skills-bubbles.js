@@ -14,10 +14,15 @@
   if (!grid) return;
 
   // Création des bulles
-  skills.forEach((skill) => {
+  skills.forEach((skill, index) => {
     const bubble = document.createElement("div");
     bubble.className =
       "skill-bubble relative w-28 h-28 md:w-32 md:h-32 flex-shrink-0 flex items-center justify-center cursor-pointer";
+
+    // --- Animation d'apparition ---
+    bubble.dataset.animate = "";
+    bubble.dataset.delay = index * 0.1;
+    bubble.className += " opacity-0 translate-y-8 transition-all duration-500";
 
     // Face de la bulle
     const face = document.createElement("div");
