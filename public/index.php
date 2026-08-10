@@ -52,7 +52,7 @@
 
     <!-- Bouton CV -->
     <div class="flex justify-center mb-20">
-        <a href="../assets/documents/cv-morgan-gardes-stage-dwwm.pdf" target="_blank" rel="noopener noreferrer"
+        <a href="../assets/documents/cv-morgan-gardes-dwwm.pdf" target="_blank" rel="noopener noreferrer"
             class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full border border-cyan-400/50 bg-cyan-400/5 hover:bg-cyan-400/15 transition-colors">
             <!-- Icône ouvrir -->
             <span class="font-mono text-sm text-cyan-100 tracking-wide">Ouvrir mon CV</span>
