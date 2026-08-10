@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Développeur web et web mobile en formation (RNCP Bac+2) recherche un stage. PHP, JavaScript, Tailwind CSS. Voir mon portfolio et mes projets concrets.">
     <title>Morgan Gardès | Portfolio</title>
     <link href="../assets/styles/style.css" rel="stylesheet">
 
