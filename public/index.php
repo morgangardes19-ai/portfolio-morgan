@@ -1,7 +1,7 @@
 <?php require_once "../_partials/_head.php" ?>
 
 <!-- SECTION 1 : PROFIL -->
-<section id="profil" class="relative min-h-screen flex items-center justify-end px-6 md:px-20">
+<section id="profil" class="relative min-h-screen flex items-center justify-end px-6 md:px-20 py-32">
     <div class="max-w-2xl w-full mr-8">
 
         <p data-animate data-delay="0" class="font-mono text-sm text-cyan-400/70 mb-4 translate-x-4 opacity-0 transition-all duration-500">
@@ -93,21 +93,21 @@
                 'desc' => 'Site en responsive.',
                 'tags' => ['HTML', 'Tailwind'],
                 'img' => '../assets/gifs/gif-the-mountain.webp',
-                'link' => '',
+                'link' => 'https://the-mountain-avec-tailwind.vercel.app/',
             ],
             [
                 'title' => 'Drumpad',
                 'desc' => 'Outil permettant d\'enregistrer et de rejouer des notes.',
                 'tags' => ['HTML', 'CSS', 'JavaScript'],
                 'img' => '../assets/gifs/gif-drumpad.webp',
-                'link' => '',
+                'link' => 'https://drumpad-navy.vercel.app/',
             ],
             [
                 'title' => 'W.',
                 'desc' => 'Site en responsive.',
                 'tags' => ['HTML', 'Tailwind'],
                 'img' => '../assets/gifs/gif-w-avec-tailwind.webp',
-                'link' => '',
+                'link' => 'https://w-avec-tail-wind.vercel.app/',
             ],
         ];
         foreach ($projects as $index => $project):
@@ -154,9 +154,9 @@
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         <?php
         $contacts = [
-            ['icon' => 'mail', 'label' => 'Email', 'value' => 'morgan.gardes.19@gmail.com', 'href' => 'mailto:morgan.gardes.19@gmail.com'],
+            ['icon' => 'mail', 'label' => 'Email', 'value' => '', 'href' => 'mailto:morgan.gardes.19@gmail.com'],
             ['icon' => 'linkedin', 'label' => 'LinkedIn', 'value' => '', 'href' => '#'],
-            ['icon' => 'github', 'label' => 'GitHub', 'value' => '@morgangardes19-ai', 'href' => 'https://github.com/morgangardes19-ai'],
+            ['icon' => 'github', 'label' => 'GitHub', 'value' => '', 'href' => 'https://github.com/morgangardes19-ai'],
         ];
 
         function renderIcon($icon)
