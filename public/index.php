@@ -155,7 +155,7 @@
         <?php
         $contacts = [
             ['icon' => 'mail', 'label' => 'Email', 'value' => '', 'href' => 'mailto:morgan.gardes.19@gmail.com'],
-            ['icon' => 'linkedin', 'label' => 'LinkedIn', 'value' => '', 'href' => '#'],
+            // ['icon' => 'linkedin', 'label' => 'LinkedIn', 'value' => '', 'href' => '#'],
             ['icon' => 'github', 'label' => 'GitHub', 'value' => '', 'href' => 'https://github.com/morgangardes19-ai'],
         ];
 

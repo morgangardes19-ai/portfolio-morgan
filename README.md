@@ -1,4 +1,4 @@
-# 🌊 Portfolio — Morgan Gardès
+# Portfolio — Morgan Gardès
 
 > Développeur web & web mobile — Portfolio personnel
 
@@ -89,7 +89,6 @@ Dans `assets/scripts/skills-bubbles.js`, ajoutez une entrée au tableau `skills`
 ## Contact
 
 - **Email** : [morgan.gardes.19@gmail.com](mailto:morgan.gardes.19@gmail.com)
-- **LinkedIn** : (à compléter)
 - **GitHub** : [morgangardes19-ai](https://github.com/morgangardes19-ai)
 
 ---
