@@ -18,16 +18,16 @@
             &gt; Développeur web et web mobile
         </p>
 
+        <!-- En formation de développeur web et web mobile -->
+
         <div data-animate data-delay="0.3"
             class="flex flex-col gap-5 border-l-2 border-cyan-400/30 pl-6 translate-x-8 opacity-0 transition-all duration-500">
             <p class="text-lg leading-relaxed text-slate-300">
-                Passionné par le développement web, je transforme des idées en
-                expériences numériques fluides.
+            Passionné par le développement, et actuellement en formation de développeur web et web mobile, je transforme des idées en expériences numériques accessibles, intuitives et fonctionnelles.
             </p>
             <p class="text-lg leading-relaxed text-slate-400">
-                Curieux de nature, je plonge constamment dans de nouvelles
-                technologies pour repousser mes limites.
-                Chaque projet est une exploration vers plus de profondeur.
+                Curieux de nature, je peux passer des journées à coder en me plongeant dans un nouveau projet pour repousser mes limites.
+                Chaque expérience est une exploration vers plus de profondeur.
             </p>
         </div>
 
@@ -37,7 +37,7 @@
             <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">Backend</span>
             <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">UI/UX</span>
             <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">Performance</span>
-            <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">Responsive</span>
+            <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-200/80">Accessibilité</span>
         </div>
     </div>
 </section>
@@ -155,7 +155,7 @@
         <?php
         $contacts = [
             ['icon' => 'mail', 'label' => 'Email', 'value' => '', 'href' => 'mailto:morgan.gardes.19@gmail.com'],
-            // ['icon' => 'linkedin', 'label' => 'LinkedIn', 'value' => '', 'href' => '#'],
+            ['icon' => 'linkedin', 'label' => 'LinkedIn', 'value' => '', 'href' => 'https://www.linkedin.com/in/morgan-gard%C3%A8s-38142a428/'],
             ['icon' => 'github', 'label' => 'GitHub', 'value' => '', 'href' => 'https://github.com/morgangardes19-ai'],
         ];
 

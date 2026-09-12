@@ -43,30 +43,8 @@ portfolio-morgan/
 
 1. **Profil** — présentation
 2. **Compétences** — bulles cliquables (explosion binaire) + bouton CV
-3. **Projets** — projets avec GIFs, générés dynamiquement en PHP
+3. **Projets** — projets avec GIFs
 4. **Contact**
-
-## Ajouter un projet
-
-Dans `public/index.php`, ajoutez une entrée au tableau `$projects` :
-
-```php
-[
-    'title' => 'Mon nouveau projet',
-    'desc'  => 'Description en une phrase.',
-    'tags'  => ['HTML', 'CSS', 'JS'],
-    'img'   => '../assets/gifs/mon-gif.gif',
-    'link'  => 'https://github.com/mon-projet',
-],
-```
-
-## Ajouter une compétence
-
-Dans `assets/scripts/skills-bubbles.js`, ajoutez une entrée au tableau `skills` :
-
-```js
-{ name: "React", color: "#61DAFB" },
-```
 
 ## Les scripts JavaScript
 
@@ -79,17 +57,11 @@ Dans `assets/scripts/skills-bubbles.js`, ajoutez une entrée au tableau `skills`
 | `scroll-animations.js` | Scroll spy + animations en cascade |
 | `skills-bubbles.js` | Bulles de compétences + explosion |
 
-## Roadmap
-
-- [ ] Carrousel de projets (défilement horizontal)
-- [ ] Accessibilité (ARIA, navigation clavier, contrastes)
-- [ ] SEO (meta description, Open Graph)
-- [ ] Déploiement en ligne
-
 ## Contact
 
 - **Email** : [morgan.gardes.19@gmail.com](mailto:morgan.gardes.19@gmail.com)
 - **GitHub** : [morgangardes19-ai](https://github.com/morgangardes19-ai)
+- **LinkedIn** : (https://www.linkedin.com/in/morgan-gard%C3%A8s-38142a428/)
 
 ---
 
