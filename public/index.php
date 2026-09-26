@@ -18,8 +18,6 @@
             &gt; Développeur web et web mobile
         </p>
 
-        <!-- En formation de développeur web et web mobile -->
-
         <div data-animate data-delay="0.3"
             class="flex flex-col gap-5 border-l-2 border-cyan-400/30 pl-6 translate-x-8 opacity-0 transition-all duration-500">
             <p class="text-lg leading-relaxed text-slate-300">

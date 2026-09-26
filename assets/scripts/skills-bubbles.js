@@ -8,6 +8,7 @@
     { name: "Figma", color: "#61DAFB" },
     { name: "PHP", color: "#61DAFB" },
     { name: "SQL", color: "#61DAFB" },
+    { name: "Symfony", color: "#61DAFB" },
   ];
 
   const grid = document.getElementById("skills-grid");
